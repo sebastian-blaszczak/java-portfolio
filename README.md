@@ -1,2 +1,2 @@
 # java-portfolio
-This repository is made full of java programing tasks to improving programing skills.
+This repository was created to improve programing skills in java and accumulate intresing programing tasks.
