@@ -10,13 +10,14 @@ public class AnagramAlgorithm {
      * @return list of booleans that shows if the comparing words are anagrams
      */
 
-    public List<Boolean> solve(String[] words1, String[] words2) {
+    public static List<Boolean> solve(String[] words1, String[] words2) {
+
+        if(words1.length != words2.length){
+            throw new IllegalArgumentException("Arrays must have the same length!");
+        }
 
         List<String> wordsToList1 = new ArrayList<>(Arrays.asList(words1));
         List<String> wordsToList2 = new ArrayList<>(Arrays.asList(words2));
-
-        wordsToList1.forEach(this::sort);
-        wordsToList2.forEach(this::sort);
 
         List<Boolean> result = new ArrayList<>();
 
@@ -27,15 +28,11 @@ public class AnagramAlgorithm {
         return result;
     }
 
-    private String sort(String word) {
-        char[] chars = word.toCharArray();
-        Arrays.sort(chars);
-        return new String(chars);
-    }
-
-    private boolean isAnagram(String word1, String word2) {
-        char[] wordToChar1 = word1.replaceAll("[\\s]", "").toCharArray();
-        char[] wordToChar2 = word2.replaceAll("[\\s]", "").toCharArray();
+    private static boolean isAnagram(String word1, String word2) {
+        char[] wordToChar1 = word1.toCharArray();
+        char[] wordToChar2 = word2.toCharArray();
+        Arrays.sort(wordToChar1);
+        Arrays.sort(wordToChar2);
         return Arrays.equals(wordToChar1, wordToChar2);
     }
 }
