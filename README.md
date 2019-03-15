@@ -9,8 +9,8 @@ Acording to wikipedia:
 >An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
 So I created a anagram solver that:
-* Inputs of solver are two equali sized arrays of string
-* Output is a List of booleans, if two words are anagrams then it will show true if not it will show false
+* Inputs of solver are two equali sized arrays of string,
+* Output is a List of booleans, if two words are anagrams then it will show true if not it will show false.
 
 Solver was tested by set of cases:
 
