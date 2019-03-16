@@ -12,15 +12,17 @@ import java.util.Arrays;
  */
 public class AnagramTest {
 
-    String[] words1;
-    String[] words2;
-    String[] wordsThatThrewException1;
-    String[] wordsThatThrewException2;
+    private String[] words1;
+    private String[] words2;
+    private String[] wordsThatThrewException1;
+    private String[] wordsThatThrewException2;
 
     @Before
     public void settingUpArrays() {
         words1 = new String[]{"more", "snail", "atom"};
         words2 = new String[]{"rome", "nails", "bomb"};
+        wordsThatThrewException1 = new String[]{"more", "snail"};
+        wordsThatThrewException2 = new String[]{"rome", "nails", "bomb"};
     }
 
     @Test
@@ -31,8 +33,6 @@ public class AnagramTest {
 
     @Test
     public void anagramTestShouldThrowIllegalArgumentException() {
-        wordsThatThrewException1 = new String[]{"more", "snail"};
-        wordsThatThrewException2 = new String[]{"rome", "nails", "bomb"};
         Assertions.assertThat(AnagramAlgorithm.solve(wordsThatThrewException1, wordsThatThrewException2))
                 .isEqualTo(Arrays.asList(true, true, false));
     }
