@@ -14,7 +14,7 @@ So I created an anagram solver that:
 
 Solver was tested by set of cases:
 
-'''markdown
+'''
     {"more", "snail", "atom"};
     {"rome", "nails", "bomb"};
 
@@ -32,7 +32,7 @@ I created an minimum unique array solver that:
 * Output is a sum of all elements in array.
 
 Solver was tested by set of cases:
-'''markdown
+'''
     {1, 2, 3, 3, 4, 5};
     {0, 0, 0, 0, 0};
     {-1, -10, -4, -4, -4};

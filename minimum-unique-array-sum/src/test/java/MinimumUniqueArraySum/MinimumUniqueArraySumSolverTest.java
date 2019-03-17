@@ -2,7 +2,7 @@ package MinimumUniqueArraySum;
 
 
 import org.assertj.core.api.Assertions;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -10,18 +10,19 @@ import org.junit.jupiter.api.Test;
  */
 class MinimumUniqueArraySumSolverTest {
 
-    private int[] testSet = new int[]{1, 2, 3, 3, 4, 5};
-    private int[] testSetAllEquals = new int[]{0, 0, 0, 0, 0};
-    private int[] testSetAllNegative = new int[]{-1, -10, -4, -4, -4};
-    private int[] testSetNegativeAndPositive = new int[]{1, 1, -1, -3, -3};
-    private int[] testSetThatThrowsException = new int[]{};
+    private int[] testSet;
+    private int[] testSetAllEquals;
+    private int[] testSetAllNegative;
+    private int[] testSetNegativeAndPositive;
+    private int[] testSetThatThrowsException;
 
-    @Before
+    @BeforeEach
     void settingUpTestSets() {
         testSet = new int[]{1, 2, 3, 3, 4, 5};
         testSetAllEquals = new int[]{0, 0, 0, 0, 0};
         testSetAllNegative = new int[]{-1, -10, -4, -4, -4};
         testSetNegativeAndPositive = new int[]{1, 1, -1, -3, -3};
+        testSetThatThrowsException = new int[]{};
     }
 
     @Test
