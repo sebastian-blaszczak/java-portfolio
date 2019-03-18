@@ -17,7 +17,6 @@ class FibonacciCollector {
                 .limit(n + 1)
                 .map(x -> fibonacci(x))
                 .collect(Collectors.toList());
-
     }
 
     private static int fibonacci(int n) {
