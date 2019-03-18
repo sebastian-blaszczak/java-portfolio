@@ -39,5 +39,5 @@ Solver was tested by set of cases:
     {};
 ````
 
-Source code and tests are in [minimum-unique-array-sum](https://github.com/sebastian-blaszczak/java-portfolio/tree/dev_new_task/minimum-unique-array-sum).
+Source code and tests are in [minimum-unique-array-sum](https://github.com/sebastian-blaszczak/java-portfolio/tree/master/minimum-unique-array-sum).
 
